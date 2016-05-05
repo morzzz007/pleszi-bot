@@ -67,6 +67,8 @@ This bot demonstrates many of the core features of Botkit:
 if (!process.env.token) {
     console.log('Error: Specify token in environment');
     process.exit(1);
+} else {
+    console.log('Running!');
 }
 
 var Botkit = require('./lib/Botkit.js');
