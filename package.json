@@ -1,0 +1,22 @@
+{
+  "name": "pleszi-bot",
+  "version": "1.0.0",
+  "description": "Pleszi-Bot for teamdoge slack channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morzzz007/pleszi-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morzzz007/pleszi-bot/issues"
+  },
+  "homepage": "https://github.com/morzzz007/pleszi-bot#readme",
+  "dependencies": {
+    "botkit": "^0.1.1"
+  }
+}
