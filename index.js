@@ -49,9 +49,9 @@ const epam = [
 ]
 
 controller.hears(['\\bhello\\b', '\\bhi\\b', '\\bre\\b'], ['message_received', 'direct_message', 'direct_mention', 'ambient'], function(bot, message) {
-  if (names[message.user] && message.user != names['U0WGR1C5Q']) {
+  if (names[message.user] && message.user != 'U0WGR1C5Q') {
     bot.reply(message, `csá ${names[message.user]}`);
-  } else if (message.user === names['U0WGR1C5Q']) {
+  } else if (message.user === 'U0WGR1C5Q') {
     bot.reply(message, `helló főnök, örülök, hogy lassan veled dolgozhatok!`); 
   }
 });
