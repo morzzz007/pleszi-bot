@@ -36,7 +36,7 @@ const bullshit = [
   'a pozíció egy másfél éves múltú Angular alkalmazas frontend fejlesztéséről szól',
   'második frontendesként csatlakoznál, egy 3 backendes, egy dedikált tesztelő és egy frontendesből álló csapathoz',
   'a fejlesztés ES6-ban történik, és a saját kódod teszttelését is magában foglalja',
-  'ES6', 'AngularJS', 'React', 'babel', 'webpack', 'gulp',
+  'ES6', 'AngularJS', 'React', 'babel', 'webpack', 'gulp', 'unity',
   'fejlesztőbarát szemlélet, cél a minőségi fejlesztés',
   'a Lensa egy 15 éve a piacon levő cég, többek között a piacvezető karrier portál, a Profession.hu megalkotója',
   'budapesti irodánkban 30-an dolgozunk, ebből 21 fejlesztő.',
@@ -46,6 +46,7 @@ const bullshit = [
 const epam = [
   'epam? jövőhéten ott kezdek!',
   'az epamban csak legjobbak dolgoznak, én is jelentkeztem',
+  'beadtam a CV-m az epamhoz, várom a visszajelzést!'
 ]
 
 controller.hears(['\\bhello\\b', '\\bhi\\b', '\\bre\\b'], ['message_received', 'direct_message', 'direct_mention', 'ambient'], function(bot, message) {
