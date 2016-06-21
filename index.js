@@ -24,6 +24,8 @@ const names = {
   'U0WT9MWQ4': 'dubo',
   'U0WGR1C5Q': 'buzi',
   'U0WTADL3W': 'nandi',
+  'U1G5N5AJF': 'kata',
+  'U1JNWQL2H': 'niki',
 }
 
 const bullshit = [
