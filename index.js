@@ -51,7 +51,7 @@ const epam = [
   'beadtam a CV-m az epamhoz, várom a visszajelzést!'
 ]
 
-controller.hears(['\\bhello\\b', '^hi$|^hi\s|\shi\s|\shi$', '^re$|^re\s|\sre\s|\sre$'], ['message_received', 'direct_message', 'direct_mention', 'ambient'], function(bot, message) {
+controller.hears(['^hello$|^hello\s|\shello\s|\shello$', '^hi$|^hi\s|\shi\s|\shi$', '^re$|^re\s|\sre\s|\sre$'], ['message_received', 'direct_message', 'direct_mention', 'ambient'], function(bot, message) {
   if (names[message.user] && message.user != 'U0WTSCMMX') {
     bot.reply(message, `csá ${names[message.user]}`);
   } else if (message.user === 'U0WTSCMMX') {
