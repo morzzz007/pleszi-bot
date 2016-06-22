@@ -1,5 +1,5 @@
-if (!process.env.token) {
-  console.log('Error: Specify token in environment');
+if (!process.env.token || !process.env.deploy_filename) {
+  console.log('Error: Specify token/deploy_filename in environment');
   process.exit(1);
 } else {
   console.log('Running!');
@@ -7,6 +7,7 @@ if (!process.env.token) {
 
 const Botkit = require('botkit');
 const _ = require('lodash');
+var fs = require('fs');
 
 const controller = Botkit.slackbot({
   debug: false,
@@ -69,4 +70,15 @@ controller.hears(['pleszi', 'plészi'], ['message_received', 'direct_message', '
 
 controller.on('message_received', function(bot, message) {
   console.log(message.user, message);
+});
+
+// .deploy password
+controller.on('direct_message',function(bot, message) {
+  if (names[message.user] && message.text.match(/.deploy .+/g)) {
+    pw = message.text.split(/.deploy(.+)?/)[1].trim();
+    fs.writeFile(process.env.deploy_filename, message.user+"###"+pw, function(err) {});
+    process.exit(0);
+  } else {
+    bot.reply(message, 'pong');
+  }
 });
