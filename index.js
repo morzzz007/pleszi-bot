@@ -40,7 +40,8 @@ const bullshit = [
   'fejlesztőbarát szemlélet, cél a minőségi fejlesztés',
   'a Lensa egy 15 éve a piacon levő cég, többek között a piacvezető karrier portál, a Profession.hu megalkotója',
   'budapesti irodánkban 30-an dolgozunk, ebből 21 fejlesztő.',
-  'szerintem a backenden lesz valami, vagy nem tudom'
+  'szerintem a backenden lesz valami, vagy nem tudom',
+  'tegnap küldtem egy verziót ami még nem volt jó'
 ]
 
 const epam = [
